@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 # bgce-stream
-One-click music streaming service for communities, enabling high-quality audio sharing with noise filtering and music mode
-=======
-# BGCE Stream
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Go Version](https://img.shields.io/badge/Go-1.19%2B-blue.svg)](https://golang.org/)
@@ -11,9 +7,9 @@ One-click music streaming service for communities, enabling high-quality audio s
 
 > **Simple audio streaming for small communities** - Create rooms instantly, share links, and start streaming music or voice with friends.
 
-## 🎵 What is BGCE Stream?
+## 🎵 What is bgce-stream?
 
-BGCE Stream is a lightweight, browser-based audio streaming platform designed for small-to-medium communities ("bhai-brother" groups). It enables instant room creation, shareable links, and high-quality audio streaming without complex setup or UI overhauls.
+bgce-stream is a lightweight, browser-based audio streaming platform designed for small-to-medium communities ("bhai-brother" groups). It enables instant room creation, shareable links, and high-quality audio streaming without complex setup or UI overhauls.
 
 ### Key Features
 
@@ -62,7 +58,7 @@ BGCE Stream is a lightweight, browser-based audio streaming platform designed fo
 
 ## 📖 Documentation
 
-- **[Contributing Guide](docs/CONTRIBUTING.md)** - How to contribute to the project
+- **[Contributing Guide](docs/CONTRIBUTING.md)** - How to contribute to bgce-stream
 - **[Roadmap](docs/ROADMAP.md)** - Development plans and upcoming features
 - **[v0.1.0 Release Notes](docs/releases/v0.1.0/README.md)** - Current MVP features
 - **[Backend README](backend/README.md)** - Backend-specific documentation
@@ -101,7 +97,7 @@ We welcome contributions! Please see our [Contributing Guide](docs/CONTRIBUTING.
 
 ## 📋 Roadmap
 
-See [Roadmap](docs/ROADMAP.md) for detailed development plans and upcoming features.
+See [Roadmap](docs/ROADMAP.md) for detailed development plans and upcoming features for bgce-stream.
 
 ## 🛠️ Technology Stack
 
