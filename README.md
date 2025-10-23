@@ -67,7 +67,7 @@ BGCE Stream is a lightweight, browser-based audio streaming platform designed fo
 - **[v0.1.0 Release Notes](docs/releases/v0.1.0/README.md)** - Current MVP features
 - **[Backend README](backend/README.md)** - Backend-specific documentation
 
-## 🏗️ Architecture
+<!-- ## 🏗️ Architecture
 
 ### Backend (Go)
 - **REST API** for room management
@@ -93,7 +93,7 @@ BGCE Stream is a lightweight, browser-based audio streaming platform designed fo
 - **Voice chats** - High-quality voice conversations
 - **Online rehearsals** - Practice sessions with band members
 - **Community meetings** - Small group discussions
-- **Gaming voice chat** - Low-latency audio for gaming
+- **Gaming voice chat** - Low-latency audio for gaming -->
 
 ## 🤝 Contributing
 
@@ -136,7 +136,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **GitHub Issues** - Bug reports and feature requests
 - **GitHub Discussions** - Questions and general discussion
-- **Email** - [Contact maintainers](mailto:maintainers@example.com)
+- **Email** - [Contact maintainers](mailto:rahim.cse.diu@gmail.com)
 
 ## 🌟 Star History
 
