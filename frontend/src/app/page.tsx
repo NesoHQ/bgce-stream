@@ -26,9 +26,11 @@ export default function Home() {
 
   const handleJoin = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (roomCode.trim()) {
-      router.push(`/stream/${roomCode}`);
-    }
+    const trimmed = roomCode.trim();
+    if (!trimmed) return;
+    // Allow only alphanumeric and hyphen for path segment (prevent path traversal / injection)
+    const safeCode = trimmed.replace(/[^a-zA-Z0-9-]/g, "").slice(0, 64);
+    if (safeCode) router.push(`/stream/${safeCode}`);
   };
 
   const createRoom = (type: "stream" | "voice") => {

@@ -1,46 +1,78 @@
-# BGCE-Stream
+# BGCE-Stream Frontend
 
-A visually stunning audio streaming and voice chat platform built with React, Vite, Shadcn UI, and Tailwind CSS.
+A visually striking audio streaming and voice chat platform built with **Next.js**, **React**, **Shadcn UI**, and **Tailwind CSS**.
 
 ## Features
 
-- **Audio Stream Room**: One broadcaster, unlimited listeners.
-  - Interactive visualizer and status indicators.
-  - Live chat for all participants.
-- **Voice Chat Room**: Peer-to-peer style voice communication.
-  - Grid layout with speaking animations.
-  - Individual participant controls.
-- **Modern UI**: Fully responsive design with dark mode support.
-- **Visuals**: Glassmorphism effects, smooth animations, and gradients.
+- **Stream Room** — One broadcaster, unlimited listeners.
+  - Status indicators and live chat for all participants.
+- **Voice Chat Room** — Peer-to-peer style voice communication.
+  - Grid layout with speaking animations and per-participant controls.
+- **Modern UI** — Responsive layout with dark/light mode via `next-themes`.
+- **Visuals** — Glassmorphism, smooth animations, and gradients.
 
 ## Tech Stack
 
-- **Frontend**: React, TypeScript, Vite
-- **Styling**: Tailwind CSS
-- **Components**: Shadcn UI (Radix Primitives)
-- **Icons**: Lucide React
-- **Routing**: React Router DOM
+| Layer     | Stack                                      |
+|----------|---------------------------------------------|
+| Framework| Next.js (App Router)                       |
+| UI       | React 19, TypeScript                       |
+| Styling  | Tailwind CSS, tailwindcss-animate          |
+| Components| Shadcn UI (Radix Primitives)               |
+| Icons    | Lucide React                               |
 
 ## Getting Started
 
-1.  **Install Dependencies**
-    ```bash
-    npm install
-    ```
+### 1. Install dependencies
 
-2.  **Run Development Server**
-    ```bash
-    npm run dev
-    ```
+```bash
+npm install
+```
 
-3.  **Build for Production**
-    ```bash
-    npm run build
-    ```
+### 2. Environment (optional)
+
+For local config (e.g. API base URL), copy the example and set values in `.env.local`:
+
+```bash
+cp .env.example .env.local
+```
+
+Only use `NEXT_PUBLIC_*` for values that are safe to expose in the browser. See `.env.example` for notes.
+
+### 3. Run development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+### 4. Build and run production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Scripts
+
+| Script   | Description                    |
+|----------|--------------------------------|
+| `npm run dev`    | Start Next.js dev server      |
+| `npm run build`  | Build for production          |
+| `npm run preview`| Run production build locally  |
+| `npm run lint`   | Run ESLint                    |
+
+## Project structure
+
+- `src/app/` — Next.js App Router pages and layouts
+- `src/components/` — Reusable UI and room components
+- `src/hooks/` — React hooks (e.g. mock room state)
+- `src/lib/` — Utilities and shared logic
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For larger changes, open an issue first to align on approach.
 
 ## License
 
