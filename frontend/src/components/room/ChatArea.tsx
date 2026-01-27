@@ -2,7 +2,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { type Message } from "@/hooks/useMockRoom";
 
 interface ChatAreaProps {
