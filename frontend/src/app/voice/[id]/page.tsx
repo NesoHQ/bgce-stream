@@ -1,13 +1,14 @@
 "use client";
+
 import { useParams, useRouter } from "next/navigation";
-import { useMockRoom } from "@/hooks/useMockRoom";
+import { MessageSquare, Users } from "lucide-react";
 import { ControlBar } from "@/components/room/ControlBar";
 import { UserList } from "@/components/room/UserList";
 import { ChatArea } from "@/components/room/ChatArea";
+import { useMockRoom } from "@/hooks/useMockRoom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Users } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function VoiceRoom() {
   const params = useParams();

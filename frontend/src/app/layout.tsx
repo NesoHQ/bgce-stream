@@ -1,12 +1,13 @@
+import type { ReactNode } from "react";
 import { ThemeProvider } from "next-themes";
-import Navbar from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar";
 import "@/index.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>

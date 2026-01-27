@@ -1,7 +1,10 @@
 "use client";
-import React, { useState } from "react";
+
+import type { ChangeEvent, FormEvent } from "react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { Mic, Radio, Users, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   Card,
   CardContent,
@@ -9,20 +12,19 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
-import { Mic, Radio, Users, ArrowRight } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
-  const [roomCode, setRoomCode] = useState("");
+  const [roomCode, setRoomCode] = useState<string>("");
 
-  const handleJoin = (e: React.FormEvent) => {
+  const handleJoin = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (roomCode.trim()) {
       router.push(`/stream/${roomCode}`);
@@ -118,7 +120,9 @@ export default function Home() {
                 placeholder="Enter Room Code..."
                 className="text-center text-lg h-12"
                 value={roomCode}
-                onChange={(e) => setRoomCode(e.target.value)}
+                onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                  setRoomCode(e.target.value)
+                }
               />
               <Button
                 className="w-full"

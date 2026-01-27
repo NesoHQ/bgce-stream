@@ -1,17 +1,18 @@
 "use client";
+
 import { useParams, useSearchParams, useRouter } from "next/navigation";
-import { useMockRoom } from "@/hooks/useMockRoom";
+import { Mic } from "lucide-react";
 import { ControlBar } from "@/components/room/ControlBar";
 import { UserList } from "@/components/room/UserList";
 import { ChatArea } from "@/components/room/ChatArea";
+import { useMockRoom } from "@/hooks/useMockRoom";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Mic } from "lucide-react";
 
 export default function StreamRoom() {
   const params = useParams();
